@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: mtaori/gh-custom-action/.github/actions/python-test-action@main
+        uses: mtaori/gh-composite-action/.github/actions/python-test-action@main
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number "$RANDOM_NUMBER"
